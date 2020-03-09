@@ -1,7 +1,7 @@
 apiVersion: cloudformation.linki.space/v1alpha1
 kind: Stack
 metadata:
-  name: my-bucket
+  name: my-bucket-2
 spec:
   template: |
     ---
