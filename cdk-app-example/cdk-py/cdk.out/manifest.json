@@ -1,0 +1,124 @@
+{
+  "version": "1.21.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "mystack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/us-west-2",
+      "properties": {
+        "templateFile": "mystack.template.json"
+      },
+      "metadata": {
+        "/mystack/CdkWorkshopQueue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkWorkshopQueue50D9D426",
+            "trace": [
+              "new Queue (/private/var/folders/y_/5pwqhxwn65580csnygqm6ym9s8pvky/T/jsii-kernel-SPCB9L/node_modules/@aws-cdk/aws-sqs/lib/queue.js:47:23)",
+              "obj._wrapSandboxCode (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/mystack/CdkWorkshopQueue/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkWorkshopQueuePolicyAF2494A5",
+            "trace": [
+              "new QueuePolicy (/private/var/folders/y_/5pwqhxwn65580csnygqm6ym9s8pvky/T/jsii-kernel-SPCB9L/node_modules/@aws-cdk/aws-sqs/lib/policy.js:16:9)",
+              "Queue.addToResourcePolicy (/private/var/folders/y_/5pwqhxwn65580csnygqm6ym9s8pvky/T/jsii-kernel-SPCB9L/node_modules/@aws-cdk/aws-sqs/lib/queue-base.js:19:27)",
+              "SqsSubscription.bind (/private/var/folders/y_/5pwqhxwn65580csnygqm6ym9s8pvky/T/jsii-kernel-SPCB9L/node_modules/@aws-cdk/aws-sns-subscriptions/lib/sqs.js:22:20)",
+              "Topic.addSubscription (/private/var/folders/y_/5pwqhxwn65580csnygqm6ym9s8pvky/T/jsii-kernel-SPCB9L/node_modules/@aws-cdk/aws-sns/lib/topic-base.js:15:49)",
+              "_wrapSandboxCode (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7589:51)",
+              "Kernel._wrapSandboxCode (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "ret._ensureSync (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7589:25)",
+              "Kernel._ensureSync (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8198:20)",
+              "Kernel.invoke (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:26)",
+              "KernelHost.processRequest (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/mystack/CdkWorkshopQueue/mystackCdkWorkshopTopic5F37349C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkWorkshopQueuemystackCdkWorkshopTopic5F37349C3CDF88D9",
+            "trace": [
+              "new Subscription (/private/var/folders/y_/5pwqhxwn65580csnygqm6ym9s8pvky/T/jsii-kernel-SPCB9L/node_modules/@aws-cdk/aws-sns/lib/subscription.js:29:9)",
+              "Topic.addSubscription (/private/var/folders/y_/5pwqhxwn65580csnygqm6ym9s8pvky/T/jsii-kernel-SPCB9L/node_modules/@aws-cdk/aws-sns/lib/topic-base.js:23:9)",
+              "_wrapSandboxCode (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7589:51)",
+              "Kernel._wrapSandboxCode (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "ret._ensureSync (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7589:25)",
+              "Kernel._ensureSync (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8198:20)",
+              "Kernel.invoke (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:26)",
+              "KernelHost.processRequest (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/mystack/CdkWorkshopTopic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkWorkshopTopicD368A42F",
+            "trace": [
+              "new Topic (/private/var/folders/y_/5pwqhxwn65580csnygqm6ym9s8pvky/T/jsii-kernel-SPCB9L/node_modules/@aws-cdk/aws-sns/lib/topic.js:15:26)",
+              "obj._wrapSandboxCode (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/Users/ddao/git/k8s_fun/cdk-app-example/cdk-py/venv/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/cx-api": "1.22.0",
+      "@aws-cdk/core": "1.22.0",
+      "@aws-cdk/region-info": "1.22.0",
+      "@aws-cdk/aws-iam": "1.22.0",
+      "@aws-cdk/aws-cloudwatch": "1.22.0",
+      "@aws-cdk/aws-kms": "1.22.0",
+      "@aws-cdk/aws-sqs": "1.22.0",
+      "@aws-cdk/aws-events": "1.22.0",
+      "@aws-cdk/aws-sns": "1.22.0",
+      "@aws-cdk/aws-ssm": "1.22.0",
+      "@aws-cdk/aws-ec2": "1.22.0",
+      "@aws-cdk/aws-logs": "1.22.0",
+      "@aws-cdk/aws-s3": "1.22.0",
+      "@aws-cdk/assets": "1.22.0",
+      "@aws-cdk/aws-s3-assets": "1.22.0",
+      "@aws-cdk/aws-lambda": "1.22.0",
+      "@aws-cdk/aws-sns-subscriptions": "1.22.0",
+      "jsii-runtime": "Python/3.7.6"
+    }
+  }
+}

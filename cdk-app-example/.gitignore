@@ -1,0 +1,9 @@
+build
+coverage.out
+deploy
+deploy/*
+__pycache__
+*.pyc
+venv
+.idea
+src/.coverage

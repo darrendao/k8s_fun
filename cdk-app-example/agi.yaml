@@ -1,0 +1,22 @@
+version: 0.1
+bu: tech-pi
+build:
+  properties:
+    image: aws/codebuild/standard
+    image_tag: "2.0"
+pipeline:
+  stages:
+    -
+      type: deploy
+      properties:
+        environment: dev
+        targets: preprod-us-west-2
+target_accounts:
+  -
+    id: preprod-us-west-2
+    account_id: "539481755578"
+    region: us-west-2
+notifications:
+  -
+    type: slack
+    endpoint: "#icr-notifications"
