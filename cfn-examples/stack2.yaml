@@ -5,3 +5,8 @@ Resources:
     Properties:
       VersioningConfiguration:
         Status: Suspended
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          -
+            ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
