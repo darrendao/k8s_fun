@@ -1,0 +1,4 @@
+Resources:
+  Type: AWS::SQS::Queue
+  Properties: 
+    DelaySeconds: 15
