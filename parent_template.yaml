@@ -1,4 +1,5 @@
 Resources:
-  Type: AWS::SQS::Queue
-  Properties: 
-    DelaySeconds: 15
+  MySQSQueue:
+    Type: AWS::SQS::Queue
+    Properties: 
+      DelaySeconds: 15
